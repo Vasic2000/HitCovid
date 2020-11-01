@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HitCovid</string>
+    <string name="time">Time : 10</string>
+    <string name="score">Score : 0</string>
+    <string name="timeWord">Time : </string>
+    <string name="startButtonText">Start!!!</string>
+    <string name="replayButtonText">Replay!!!</string>
+    <string name="quiteBittonText">Quite!</string>
+    <string name="endOfTime">Time\'s out!</string>
+</resources>
