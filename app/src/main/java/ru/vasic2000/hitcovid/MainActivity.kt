@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         startMenu()
     }
 
-
     private fun startMenu() {
         initialize()
 
@@ -46,6 +45,10 @@ class MainActivity : AppCompatActivity() {
         scoreText.visibility = View.VISIBLE
         timeText.visibility = View.VISIBLE
 
+        background.visibility = View.INVISIBLE
+
+        initImages()
+
         object : CountDownTimer(15000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 timeText.text = getString(R.string.timeWord) + millisUntilFinished/1000
@@ -58,11 +61,11 @@ class MainActivity : AppCompatActivity() {
             }
         }.start()
 
-        initImages()
         hideImages()
     }
 
     private fun replayOrExit() {
+        score = 0
         for(i in 0 until imageArray.size) {
             imageArray[i].visibility = View.INVISIBLE
         }
@@ -82,13 +85,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initImages() {
+        val rnd = Random()
+        val covidPicIndex = rnd.nextInt(9)
+        var covidImageName : Int
+
+        when (covidPicIndex) {
+            1 -> covidImageName = R.drawable.covid1
+            2 -> covidImageName = R.drawable.covid2
+            3 -> covidImageName = R.drawable.covid3
+            4 -> covidImageName = R.drawable.covid4
+            5 -> covidImageName = R.drawable.covid5
+            6 -> covidImageName = R.drawable.covid6
+            7 -> covidImageName = R.drawable.covid7
+            8 -> covidImageName = R.drawable.covid8
+            else -> covidImageName = R.drawable.covid9
+        }
+
         for(i in 0 until imageArray.size) {
-            imageArray[i].setImageResource(R.drawable.covid)
+            imageArray[i].setImageResource(covidImageName)
         }
     }
 
     fun hideImages() {
-
 
         runnable = object : Runnable {
             override fun run() {

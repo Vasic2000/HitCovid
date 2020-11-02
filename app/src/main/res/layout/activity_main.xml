@@ -7,11 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
     <TextView
         android:id="@+id/timeText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/buttonText"
         android:text="@string/time"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -30,32 +42,28 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
     </LinearLayout>
 
     <LinearLayout
@@ -71,32 +79,28 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
     </LinearLayout>
 
     <LinearLayout
@@ -112,32 +116,28 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView10"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView12"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
     </LinearLayout>
 
     <LinearLayout
@@ -153,32 +153,28 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView14"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView15"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:onClick="increaseScore"
-            app:srcCompat="@drawable/covid" />
+            android:onClick="increaseScore" />
     </LinearLayout>
 
     <TextView
@@ -188,6 +184,7 @@
         app:layout_constraintTop_toBottomOf="@id/linearLayout4"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:textColor="@color/buttonText"
         android:text="@string/score"
         android:textSize="40sp"/>
 
@@ -198,6 +195,7 @@
         android:text="@string/startButtonText"
         android:textSize="24sp"
         android:onClick="game"
+        android:textColor="@color/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -210,6 +208,7 @@
         android:text="@string/replayButtonText"
         android:textSize="32sp"
         android:onClick="game"
+        android:textColor="@color/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -221,6 +220,7 @@
         android:layout_height="wrap_content"
         android:text="@string/quiteBittonText"
         android:textSize="32sp"
+        android:textColor="@color/buttonExit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
