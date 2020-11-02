@@ -221,6 +221,7 @@
         android:text="@string/quiteBittonText"
         android:textSize="32sp"
         android:textColor="@color/buttonExit"
+        android:onClick="exitMain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
