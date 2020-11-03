@@ -15,7 +15,6 @@ import java.lang.System.exit
 import java.util.*
 import kotlin.collections.ArrayList
 
-
 class MainActivity : AppCompatActivity() {
     var score : Int = 0
     var imageArray = ArrayList<ImageView>()
@@ -26,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var backToast: Toast
 
     lateinit var sounds : SoundPool
-    var kheh : Int = 0
+
     var aaa : Int = 0
     var hit1 : Int = 0
     var hit2 : Int = 0
@@ -38,12 +37,13 @@ class MainActivity : AppCompatActivity() {
     var hit8 : Int = 0
     var hit9 : Int = 0
 
-    val rndSound = Random()
     var covidKillSound : Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        volumeControlStream = AudioManager.STREAM_MUSIC
 
         startMenu()
     }
@@ -198,7 +198,7 @@ class MainActivity : AppCompatActivity() {
     fun increaseScore(view: View) {
         score++
         scoreText.text = "Score: " + score
-        sounds.play(covidKillSound,1f,1f,0,0,0f)
+        sounds.play(covidKillSound, 1f, 1f, 0, 0, 0f)
     }
 
     override fun onBackPressed() {

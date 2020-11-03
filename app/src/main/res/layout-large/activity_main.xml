@@ -20,6 +20,7 @@
 
     <TextView
         android:id="@+id/timeText"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,10 +28,11 @@
         android:text="@string/time"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:textSize="40sp"/>
+        android:textSize="60sp"/>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -39,29 +41,29 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
     </LinearLayout>
@@ -76,29 +78,29 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
     </LinearLayout>
@@ -113,29 +115,29 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView11"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView12"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
     </LinearLayout>
@@ -150,36 +152,36 @@
 
         <ImageView
             android:id="@+id/imageView13"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView14"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
             android:layout_weight="1"
             android:onClick="increaseScore" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/scoreText"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout4"
@@ -187,14 +189,14 @@
         android:layout_width="wrap_content"
         android:textColor="@color/buttonText"
         android:text="@string/score"
-        android:textSize="40sp"/>
+        android:textSize="60sp"/>
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/startButtonText"
-        android:textSize="24sp"
+        android:textSize="60sp"
         android:onClick="game"
         android:textColor="@color/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -207,7 +209,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/replayButtonText"
-        android:textSize="32sp"
+        android:textSize="60sp"
         android:onClick="game"
         android:textColor="@color/buttonText"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -220,13 +222,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quiteBittonText"
-        android:textSize="32sp"
+        android:textSize="60sp"
         android:textColor="@color/buttonExit"
         android:onClick="exitMain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/replayButton"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
