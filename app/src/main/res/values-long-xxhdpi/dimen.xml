@@ -3,6 +3,6 @@
     <dimen name="btnTextSize">35sp</dimen>
     <dimen name="textSize">38sp</dimen>
     <dimen name="timeTextMargin">10dp</dimen>
-    <dimen name="scoreTextMargin">15dp</dimen>
-    <dimen name="imageSize">97dp</dimen>
+    <dimen name="scoreTextMargin">25dp</dimen>
+    <dimen name="imageSize">130dp</dimen>
 </resources>

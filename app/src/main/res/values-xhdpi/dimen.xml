@@ -4,5 +4,5 @@
     <dimen name="textSize">40sp</dimen>
     <dimen name="timeTextMargin">15dp</dimen>
     <dimen name="scoreTextMargin">25dp</dimen>
-    <dimen name="imageSize">120dp</dimen>
+    <dimen name="imageSize">85dp</dimen>
 </resources>
