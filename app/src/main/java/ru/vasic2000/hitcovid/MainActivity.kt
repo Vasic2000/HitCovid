@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var sounds : SoundPool
 
-    var aaa : Int = 0
     var hit1 : Int = 0
     var hit2 : Int = 0
     var hit3 : Int = 0
@@ -60,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         exitButton.visibility = View.INVISIBLE
         scoreText.visibility = View.INVISIBLE
         timeText.visibility = View.INVISIBLE
-        Thread.sleep(1000)
     }
 
     fun game(view: View) {
@@ -72,11 +70,13 @@ class MainActivity : AppCompatActivity() {
 
         background.visibility = View.INVISIBLE
 
+        scoreText.text = getString(R.string.score) + " 0"
+
         initImages()
 
         object : CountDownTimer(15000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                timeText.text = getString(R.string.timeWord) + millisUntilFinished/1000
+                timeText.text = getString(R.string.timeWord) + " " +  millisUntilFinished/1000
             }
 
             override fun onFinish() {
@@ -110,16 +110,14 @@ class MainActivity : AppCompatActivity() {
             sounds = SoundPool(2, AudioManager.STREAM_MUSIC, 1)
         }
 
-        aaa = sounds.load(applicationContext, R.raw.aaa, 1)
-
         hit1 = sounds.load(applicationContext, R.raw.ay, 1)
         hit2 = sounds.load(applicationContext, R.raw.oi3, 1)
         hit3 = sounds.load(applicationContext, R.raw.hu, 1)
         hit4 = sounds.load(applicationContext, R.raw.ao, 1)
         hit5 = sounds.load(applicationContext, R.raw.aaa, 1)
         hit6 = sounds.load(applicationContext, R.raw.otr, 1)
-        hit7 = sounds.load(applicationContext, R.raw.ao, 1)
-        hit8 = sounds.load(applicationContext, R.raw.puk, 1)
+        hit7 = sounds.load(applicationContext, R.raw.aaa, 1)
+        hit8 = sounds.load(applicationContext, R.raw.arnu, 1)
         hit9 = sounds.load(applicationContext, R.raw.o_o, 1)
 
         imageArray = arrayListOf(
@@ -197,7 +195,7 @@ class MainActivity : AppCompatActivity() {
 
     fun increaseScore(view: View) {
         score++
-        scoreText.text = "Score: " + score
+        scoreText.text = getString(R.string.score) + " " + score
         sounds.play(covidKillSound, 1f, 1f, 0, 0, 0f)
     }
 

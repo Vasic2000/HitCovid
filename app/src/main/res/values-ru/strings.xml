@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Побей вирус</string>
+    <string name="score">Очки :</string>
+    <string name="timeWord">Время :</string>
+    <string name="startButtonText">Начать!!!</string>
+    <string name="replayButtonText">Повторить!!!</string>
+    <string name="quiteBittonText">Уйти!</string>
+    <string name="endOfTime">Время истекло!</string>
+</resources>
